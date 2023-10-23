@@ -1,4 +1,4 @@
-# Activity Selection Problem
+Activity Selection Problem
 
 
 ### Description
