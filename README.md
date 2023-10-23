@@ -1,9 +1,16 @@
-# Timetable Generator Web-Application
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)        ![Django](https://img.shields.io/badge/Made%20with-Django-blue?style=?style=plastic&logo=appveyor&logo=data:image/png;base64)
+# Timetable Generation System (TTGS)
 
-###### This was final project with ![Abdullah Saleem](https://github.com/mrabdullahdev) for Analysis of Algorithm in Semester 4
+## School of Computer Science, MITWPU
+### Academic Year 2023-24
+### MCA Sem III
+### Mini Project on Open-Source Development
 
-This is the Activity Scheduling Ptoject which will generate the timetable of different sections for user with required inputs.
+**Project Team Member:**
+- Name: Jigyasu Singh Chouhan
+- Roll No: 39
+- Class: SYMCA
+- Batch: 2022-2024
+- Email: SINGHJIGYASU53@GMAIL.COM
 
 ## Configuration Setup
 <b>Project Configuration Guidelines(Step by Step):</b>
@@ -12,8 +19,7 @@ To run this project on your local server, follow the following steps:
 * Install Python 3.8 on your Computer from the official website.
 * Install Django on your computer by running this command 
                       
-                      pip install Django(For windows)   
-                      python -m pip install Django(For Mac/Linux)
+                      pip install Django(For windows)  
 
 * Install Django Crispy Forms by running this command:
 
@@ -33,59 +39,108 @@ To run this project on your local server, follow the following steps:
                        python manage.py runserver
 - App is running on your Computer now. Enjoy!!!
 
+**Project Overview / Background:**
+
+The Timetable Generation System (TTGS) is a comprehensive web application developed to address the complex scheduling needs of educational institutions, such as colleges and universities. This project was undertaken to streamline and optimize the process of creating timetables, which is a critical aspect of academic management.
+
+**Need of Work / Reason for Selection of this Project:**
+
+The selection of the Timetable Generation System (TTGS) project was driven by several key factors:
+
+- **Manual Timetable Creation is Time-Consuming:** Traditional methods of manually creating timetables are labor-intensive, error-prone, and time-consuming. This project aims to automate and expedite this process.
+
+- **Complex Constraints:** Academic timetables are subject to numerous constraints, both hard and soft, such as unique class timings, classroom capacities, teacher availability, and departmental requirements. Handling these constraints manually is challenging, and automation can significantly reduce scheduling conflicts.
+
+- **Resource Optimization:** Efficiently allocating resources like classrooms, teachers, and students is essential for the smooth functioning of educational institutions. TTGS uses optimization techniques to achieve this.
+
+- **Real-World Application:** Timetable generation is a practical problem faced by educational institutions worldwide. By creating a solution for this common issue, TTGS has practical applicability and potential benefits for a broad user base.
+
+**Problem Statement:**
+
+Efficiently and automatically generate conflict-free academic timetables for educational institutions while considering hard and soft constraints, optimizing the allocation of teachers, classrooms, and courses, and simplifying the scheduling process.
+
+**Benefits to the surrounding/society:**
+
+The Timetable Generation System (TTGS) offers several benefits to both the immediate educational environment and society at large:
+
+- **Improved Academic Experience:** Optimized timetables ensure that students and teachers can engage in productive and organized learning and teaching experiences, enhancing the overall quality of education.
+
+- **Resource Optimization:** TTGS maximizes the utilization of available resources, including classrooms and teacher schedules, leading to cost savings for educational institutions.
+
+- **Time Savings:** By automating the timetable generation process, TTGS saves administrators and staff valuable time that can be redirected towards other essential tasks.
+
+- **Reduced Conflicts:** The genetic algorithm used by TTGS minimizes conflicts, such as overlapping class schedules, reducing stress and frustration for both teachers and students.
+
+- **Enhanced Efficiency:** Educational institutions can operate more efficiently with well-designed timetables, resulting in improved productivity and student satisfaction.
+
+- **Data-Driven Decision-Making:** TTGS generates timetables based on data and constraints, enabling educational institutions to make informed decisions about resource allocation.
+
+- **Scalability:** The system can accommodate the needs of various educational institutions, from small schools to large universities, making it accessible to a wide range of stakeholders.
+
+**Proposed Techniques or methods to be implemented:**
+
+- **Genetic Algorithm (GA):** TTGS uses Genetic Algorithm, a powerful optimization method, to create timetables by evaluating the quality of timetables based on constraints and objectives.
+
+- **SQLite Database:** For data storage and retrieval, TTGS employs SQLite, a lightweight and efficient database solution.
+
+- **Web Development (Django):** Django, a high-level Python web framework, is used to create the web application's user interface and backend, ensuring security and scalability.
+
+**Advantages:**
+
+- **Efficiency:** TTGS automates the timetable generation process, saving significant time and effort compared to manual scheduling.
+
+- **Optimization:** The genetic algorithm optimizes timetables, minimizing conflicts and maximizing resource utilization.
+
+- **User-Friendly:** The web-based interface makes it easy for administrators to input data, monitor progress, and download timetables.
+
+- **Flexibility:** TTGS can accommodate various educational institutions, from schools to universities, with different scheduling needs.
+
+- **Resource Utilization:** By optimizing room and teacher allocations, TTGS helps institutions make the most of their resources.
+
+- **Conflict Resolution:** The system efficiently handles constraints and minimizes conflicts, leading to fewer scheduling disputes.
+
+**Limitations:**
+
+- **Dependency on Input Data Quality:** The quality and accuracy of input data significantly impact the effectiveness of the timetable generated.
+
+- **Complex Constraints:** Extremely complex constraints may require additional customization beyond the standard features of TTGS.
+
+- **Computation Time:** The genetic algorithm may require substantial computation time for large institutions or complex scheduling scenarios.
+
+- **Optimality Guarantee:** While TTGS aims to generate optimal timetables, there is no guarantee that it will always find the global optimum.
+
+- **Scalability:** The system's performance may degrade as the dataset grows significantly.
+
+**Applications:**
+
+- Educational Institutions
+- Training Centers
+- Conference and Event Planning
+- Employee Shift Scheduling
+- Resource Management
+- Project Planning
+
+**Project requirements:**
+
+**Software Technologies Used:**
+- HTML5
+- CSS3
+- Python 3.8
+- Django 3.0
+- JavaScript
+- sqlite3
+
+**Software Dependencies:**
+- python3.6
+- Django
+
+**References:**
+
+- [GeeksforGeeks - Genetic Algorithms](https://www.geeksforgeeks.org/genetic-algorithms/)
+- [Ander Fernandez Blog - Genetic Algorithm in Python](https://anderfernandez.com/en/blog/genetic-algorithm-in-python/)
+- [Towards Data Science - Using Genetic Algorithms to Schedule Timetables](https://towardsdatascience.com/using-genetic-algorithms-to-schedule-timetables-27f132c9e280)
 
 
+---
 
-
-
-
-
-## Alogrithm
-When first we started the project we chosed the Greedy algorithm to perform for our project but as days went by, we could not complete it in greedy way so the most suitable approach we reached, was <b>Randomized Brute Force</b> as some of the values generated in algorithm was random in order to fulfill the requirements. This algorithm is connected with the database in the back-end where the data saved in the database will be passed through the algorithm to generate the timetable. Our Algorithm on the console is just working perfectly but as we were learning the python and Django for the first time so that got us into the problem to connect the database with the algorithm but we are working on it untill we have time.
-
-## Features
-1. User-Friendly GUI which helps you upload data on the go.
-2. You can generate timetable for one class at a time.
-3. You can download the PDF file of the timetable.
-4. A responsive app which can be used in any device.
-
-## Quick Demo   
-![Quick Demo](https://github.com/mrabdullahdev/CS311S20PID27/blob/master/Home%20-%20Activity%20Scheduling%20App.webm%20-%20Google%20Drive.gif "Quick Demo of website")
-
-## Desktop View
-![Desktop View](Screenshots/main-page.png "Main Page")
-## Mobile View
-![Mobile View](Screenshots/mobile-view.png "Mobile View - Responsive")
-## Timetable
-![Timetable](Screenshots/Timetable.png "Timetable")
-## Course Interface
-![Add Course](Screenshots/Add-Course.png "Add Course")
-
-## Professor Interface
-![Add Professor](Screenshots/Add-Professor.png "Add Professor")
-## Classroom Interface
-![Add Classroom](Screenshots/Add-classroom.png "Add Classroom")
-
-## Class(Section) Interface
-![Add Section](Screenshots/add-Class.png "Add Section")
-
-
-## View Table Interface
-![View Table](Screenshots/Professo-Table.png "View Table")
-
-![View Table2](Screenshots/Class-Table.png "Class table")
-
-
-
-## Update Page Interface
-![update page](Screenshots/update.png "Update Page")
-
-
-## Delete Page Interface
-![Delete Page](Screenshots/delete.png "delete page")
-
-
-## User Interface Change Request
-When we are asked to make the user interface of your app in just few days, we made the interface as best as we can in that short time. But as we started working on project, our interface was not user friendly which was our first priority. So we imporved our version of this interface which is shown below to the version which you can watch now. We have tried our best to make the interface as friendly as we could. [Here](https://github.com/mrabdullahdev/CS311S20PID27/blob/master/Activity%20Scheduling%20-%20Final%20Project-compressed_2.pdf) you can see the old user-interface.
-
-![Old-Prototype](https://github.com/mrabdullahdev/CS311S20PID27/blob/master/Activity%20Scheduling%20(Prototyping).PNG "Old Prototype of App")
+*This project is a part of the academic curriculum and aims to address the challenges faced by educational institutions in timetable generation.*
