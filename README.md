@@ -123,15 +123,15 @@ The Timetable Generation System (TTGS) offers several benefits to both the immed
 **Project requirements:**
 
 **Software Technologies Used:**
-- HTML5
-- CSS3
-- Python 3.8
-- Django 3.0
+- HTML
+- CSS
+- Python 
+- Django 
 - JavaScript
 - sqlite3
 
 **Software Dependencies:**
-- python3.6
+- python
 - Django
 
 **References:**
