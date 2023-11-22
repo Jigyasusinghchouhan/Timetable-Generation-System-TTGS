@@ -33,7 +33,7 @@ To run this project on your local server, follow the following steps:
                       git clone “https://github.com/mHuzefa/TimetableGeneratorApp.git”
 * After clonning the repository in your computer, run the command:
 
-                      cd TimetableGeneratorApp
+                      cd ActivitySelectionTimetable
 * Run this command to run server on your localhost:8000
 
                        python manage.py runserver
