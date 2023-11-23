@@ -39,7 +39,7 @@ To run this project on your local server, follow the following steps:
                        python manage.py runserver
 - App is running on your Computer now. Enjoy!!!
 
-**Project Overview / Background:**
+**Project Overview / Background:**python manage.py runserver
 
 The Timetable Generation System (TTGS) is a comprehensive web application developed to address the complex scheduling needs of educational institutions, such as colleges and universities. This project was undertaken to streamline and optimize the process of creating timetables, which is a critical aspect of academic management.
 

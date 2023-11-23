@@ -126,17 +126,21 @@
 
 <br>
 <br>
-<div class="navbar-footer-container">
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
-        <footer>
-            <div class="footer-content">
-                <p>All rights are reserved under Jigyasu Singh.</p>
-                <p>Email: jigyasu2001@gmail.com</p>
-                <p>Phone: 8619708469</p>
-            </div>
-        </footer>
-    </nav>
-</div>
+<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse collapse" data-toggle="collapse" aria-expanded="false" id="navbarNav">
+            <ul class="nav navbar-nav mx-auto"> <!-- Add mx-auto class to center the content -->
+                <li class="nav-item text-center active">
+                    <a class="nav-link link" href="{% url 'selection' %}">All rights are reserved under Jigyasu Singh <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
 
 
 {% endblock %}
