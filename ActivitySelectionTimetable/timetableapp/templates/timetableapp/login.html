@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-
     <style>
         :root {
             --background: #1a1a2e;
@@ -240,13 +239,15 @@
                 <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png"
                     alt="illustration" class="illustration" />
                 <h1 class="opacity">LOGIN</h1>
-                <form>
-                    <input type="text" placeholder="USERNAME" />
-                    <input type="password" placeholder="PASSWORD" />
-                    <div class="d-flex justify-content-center mt-3 login_container">
-                        <input class="btn login_btn" type="submit" value="Login">
-                    </div>
-                </form>
+                <form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="USERNAME" />
+    <input type="password" name="password" placeholder="PASSWORD" />
+    <div class="d-flex justify-content-center mt-3 login_container">
+        <input class="btn login_btn" type="submit" value="Login">
+    </div>
+</form>
+
                 {% for message in messages %}
                     <p id="messages">{{message}}</p>
                 {% endfor %}
@@ -258,6 +259,10 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // Include any JavaScript code from the new code if needed
+    </script>
 </body>
 
 </html>

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-
     <style>
         :root {
             --background: #1a1a2e;
@@ -241,18 +240,28 @@
                 <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png"
                     alt="illustration" class="illustration" />
                 <h1 class="opacity">REGISTER</h1>
-                <form>
-                    <input type="text" placeholder="USERNAME" />
-                    <input type="text" placeholder="FIRST NAME" />
-                    <input type="text" placeholder="LAST NAME" />
-                    <input type="email" placeholder="EMAIL" />
-                    <input type="password" placeholder="ENTER PASSWORD" />
-                    <input type="password" placeholder="RE-ENTER PASSWORD" />
+
+                <!-- Django Form Handling -->
+                {% for message in messages %}
+                    <p id="messages">{{ message }}</p>
+                {% endfor %}
+
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <input type="text" placeholder="USERNAME" name="username" />
+                    <input type="text" placeholder="FIRST NAME" name="first_name" />
+                    <input type="text" placeholder="LAST NAME" name="last_name" />
+                    <input type="email" placeholder="EMAIL" name="email" />
+                    <input type="password" placeholder="ENTER PASSWORD" name="password1" />
+                    <input type="password" placeholder="RE-ENTER PASSWORD" name="password2" />
 
                     <div class="d-flex justify-content-center mt-3 login_container">
                         <input class="btn login_btn" type="submit" value="Register">
                     </div>
                 </form>
+
+                <!-- Display form errors -->
+                {{ form.errors }}
 
                 <div class="mt-4">
                     <div class="d-flex justify-content-center links">
@@ -262,6 +271,21 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // JavaScript for setting placeholder values
+        var form_fields = document.getElementsByTagName('input');
+        form_fields[1].placeholder = 'USERNAME';
+        form_fields[2].placeholder = 'FIRST NAME';
+        form_fields[3].placeholder = 'LAST NAME';
+        form_fields[4].placeholder = 'EMAIL';
+        form_fields[5].placeholder = 'ENTER PASSWORD';
+        form_fields[6].placeholder = 'RE-ENTER PASSWORD';
+
+        for (var field in form_fields) {
+            form_fields[field].className += ' form-control';
+        }
+    </script>
 </body>
 
 </html>
