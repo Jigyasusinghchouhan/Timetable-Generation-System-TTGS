@@ -122,7 +122,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     # "E:/A.S_Files/Semester_4/ALGO/ActivitySelection_Proj/CS311S20PID27/ActivitySelectionTimetable"
-    "C:/Users/huzi6/Desktop/CS311S20PID27/ActivitySelectionTimetable/"
+    "E:\MCA\sem 3\mini project\Timetable-Generation-System-TTGS\ActivitySelectionTimetable/"
 ]
 
 # Static files (CSS, JavaScript, Images)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="c1f0d5a9-565f-4c09-8908-4df9c0902846">
+    <data-source source="LOCAL" name="db [2]" uuid="681a5ba8-6861-4c49-a0fd-cc8e7f51e86a">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\JIGYASU SINGH\PycharmProjects\Timetable-Generation-System-TTGS\ActivitySelectionTimetable\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:E:\MCA\sem 3\mini project\Timetable-Generation-System-TTGS\ActivitySelectionTimetable\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
